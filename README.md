@@ -160,6 +160,7 @@ inside the running Docker container terminal.
 * Two-factor authentication (2FA) is **not supported**
 * Only slots for the **current week** are checked
 * Only the **start time** of a slot is detected
+* Not yet tested with group projects review slots
 * Early development stage — the code is functional but not yet fully polished
 
 ---
