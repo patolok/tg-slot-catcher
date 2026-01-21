@@ -1,6 +1,6 @@
 USERNAME=alexandv
 PASSWORD=password
-PAGE_LOAD_WAIT=30
+PAGE_LOAD_WAIT=35
 CHECK_INTERVAL=180
 BOT_TOKEN=5453675132:AbHjdvlJgI8IfkdlqaCzXhfg5su4YVrZdrw
 USER_ID=6435621344
@@ -12,7 +12,7 @@ USER_ID=6435621344
 # USERNAME - логин платформы
 # PASSWORD - пароль платформы
 # CHECK_INTERVAL - пауза в секундах между проверками слотов в календаре
-# PAGE_LOAD_WAIT - ожидания прогрузки слотов в календаре в секундах, рекомендую оставить 30
+# PAGE_LOAD_WAIT - ожидания прогрузки слотов в календаре в секундах, рекомендую оставить 35
 
 # --- НАСТРОЙКИ TELEGRAM ---
 # BOT_TOKEN - токен тг-бота полученный от @BotFather, не забудьте написать своему боту /start
