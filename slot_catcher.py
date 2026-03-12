@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import (
     TimeoutException,
     NoSuchElementException,
@@ -115,13 +116,14 @@ def send_telegram(message: str):
 
 # --- SELENIUM ---
 chrome_options = Options()
+chrome_options.binary_location = "/usr/bin/chromium"
 chrome_options.add_argument("--headless=new")
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--blink-settings=imagesEnabled=false")
-driver = webdriver.Chrome(options=chrome_options)
-
+service = Service("/usr/bin/chromedriver")
+driver = webdriver.Chrome(service=service, options=chrome_options)
 
 def login():
     max_attempts = 3
